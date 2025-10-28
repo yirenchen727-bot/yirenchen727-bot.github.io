@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鑫達興機械有限公司</title>
+    <style>
+        body {
+            font-family:'Courier New', Courier, monospace;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+			 color: #f4f4f4;
+            background-image: url('background.jpg'); /* 背景圖片 */
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* 半透明背景 */
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+		    border-bottom: 3px solid #444; /* 增加底部邊框，增強工業感 */
+
+        }
+        header h1 {
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 4px; /* 增加字母間距 */
+        }
+
+        header p {
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 15px 0;
+            text-align: left;
+			padding-left: 20px; /* 左邊內邊距，讓內容距離邊界更遠 */
+			border-bottom: 3px solid #555; /* 增加底部邊框 */
+
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+			 text-transform: uppercase;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.7); /* 半透明白色背景 */
+            margin: 20px;
+            border-radius: 10px;
+			  border: 3px solid #555; /* 邊框加粗 */
+        }
+           h2, h3 {
+            color: #ffd700; /* 金色，增加工業風感 */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .product-category {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+			gap: 10px;
+            margin-top: 20px;
+        }
+
+        .product-category .product {
+            width: 30%;
+            margin-bottom: 20px;
+            text-align: center;
+			background-color: #222;
+            border: 2px solid #555;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6); /* 增加陰影效果 */
+            transition: transform 0.3s ease;
+        }
+		 .product-category .product:hover {
+            transform: translateY(-5px); /* 增加懸停效果 */
+            box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.8); /* 放大陰影 */
+        }
+
+       .product img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid #777;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 圖片陰影 */
+        }
+		 .product p {
+            font-size: 14px;
+            color: #ddd;
+            margin-top: 10px;
+        }
+
+          footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+		 footer p {
+            margin: 0;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>鑫達興機械有限公司</h1>
+        <p>客製化設備開發</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">公司簡介</a>
+        <a href="#products">產品介紹</a>
+        <a href="#contact">聯絡我們</a>
+    </nav>
+
+    <!-- Company Introduction Section -->
+    <section id="about">
+        <h2>公司簡介</h2>
+        <p>
+本自動化機械廠初創於西元1998年，工廠名稱為鑫達興企業社，致力於機械自動化之研發與設計製造，期間銘感於產業各界的支持，使公司的營運得以日上軌道，猶是感激。
+本自動化機械公司於西元2006年成立鑫達興機械有限公司，繼續專職於自動化機械工程之製作與研發，以期許自動化之產業，蓬勃發展於各個產業領域上。
+鑫達興機械有限公司位於彰化縣埔鹽鄉，是一家開發設計製造自動化機械與自動化機械相關設備的機械公司，如有自動化機械之需求，迎蒞臨指教
+</p>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <h2>產品介紹</h2>
+        <div class="product-category">
+            <div class="product">
+                <h3>自動鉚釘組立機</h3>
+                <img src="自動鉚釘組立機.jpg"  alt="自動鉚釘組立機圖片"> <!-- 自動鉚釘組立機 -->
+                <p><strong>自動鉚釘組立機</strong><br>自動鉚釘組裝機，可根據客戶需求組裝之零件客製設備。<br>
+				<a href="https://www.youtube.com/watch?v=UalHgEb7vZI" target="_blank">點我觀看影片</a></p>
+
+            </div>
+			<div class="product">
+                <h3>自動化組裝機</h3>
+                <img src="自動化組裝機.JPG" alt="圖片"> 
+                <p><strong>自動化組裝機</strong><br>內容敘述。</p>
+            </div>
+			<div class="product">
+                <h3>吊牌組裝機</h3>
+                <img src="吊牌組裝機.png" alt="圖片"> 
+                <p><strong>吊牌組裝機</strong><br>內容敘述。</p>
+            </div>
+			<div class="product">
+                <h3>計程收線綑紮機</h3>
+                <img src="計程收線綑紮機.jpg" alt="圖片"> 
+                <p><strong>計程收線綑紮機</strong><br>內容敘述。</p>
+            </div>
+			<div class="product">
+                 <h3>簡易型膠帶封口機</h3>
+                <img src="簡易型膠帶封口機.png" alt="圖片"> 
+                <p><strong>簡易型膠帶封口機</strong><br>內容敘述。</p>
+            </div>
+			<div class="product">
+                 <h3>L型膠帶封口機</h3>
+                <img src="L型膠帶封口機.png" alt="圖片"> 
+                <p><strong>L型膠帶封口機</strong><br>內容敘述。</p>
+            </div>
+			<div class="product">
+                 <h3>三面L型膠帶封口機</h3>
+                <img src="三面L型膠帶封口機.png" alt="圖片"> 
+                <p><strong>三面L型膠帶封口機</strong><br>內容敘述。</p>
+            </div>
+			<div class="product">
+                 <h3>吊牌組裝機</h3>
+                <img src="吊牌組裝機.png" alt="圖片"> 
+                <p><strong>吊牌組裝機</strong><br>內容敘述。</p>
+            </div>
+			
+
+            <div class="product">
+                 <h3>送料機</h3>
+                <img src="送料機.png" alt="送料機圖片"> 
+                <p><strong>送料機</strong><br>內容敘述。</p>
+            </div>
+			<div class="product">
+                 <h3>蠟燭芯蕊組裝機</h3>
+                <img src="蠟燭芯蕊組裝機.jpg" alt="圖片"> 
+                <p><strong>蠟燭芯蕊組裝機</strong><br>內容敘述。。</p>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>聯絡我們</h2>
+        <p>若有任何疑問或需求，請隨時與我們聯絡：</p>
+        <ul>
+            <li>電話: (04) 8656033</li>
+            <li>電子郵件: wenjianchen123@gmail.com</li>
+            <li>地址: 彰化縣埔鹽鄉西湖村新生路115號</li>
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
+   <footer>
+     <!--   <p>&copy; 2025 我們公司. 版權所有.</p> -->
+   </footer>
+
+</body>
+</html>
