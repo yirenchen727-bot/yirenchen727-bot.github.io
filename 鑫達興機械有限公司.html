@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鑫達興機械有限公司</title>
+    <style>
+        body {
+            font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #e6f3ff, #ffffff);
+            color: #222;
+            overflow-x: hidden;
+        }
+
+        header {
+    position: relative;
+    color: rgb(0, 0, 0);
+    padding: 50px 0 30px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+header .header-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%; /* 浮水印大小，可依需求調整 */
+    height: 350px;
+    background: url("background.jpg") no-repeat center/cover;
+    opacity: 0.3; /* 透明度，越小越淡 */
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* 不會干擾滑鼠事件 */
+    z-index: 0;
+}
+
+header h1,
+header p {
+    position: relative;
+    z-index: 1; /* 確保文字顯示在圖片上方 */
+}
+
+
+        nav {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 12px 0;
+            text-align: left;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding-left: 8%;
+        }
+
+        nav a {
+            color: #0078d7;
+            margin: 0 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #0056a6;
+            text-shadow: 0 0 8px rgba(0, 136, 255, 0.5);
+        }
+
+        section {
+            padding: 20px 8%;
+            margin: 40px auto;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #0078d7;
+            border-left: 6px solid #00aaff;
+            padding-left: 12px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            color: #003366;
+            margin-bottom: 10px;
+        }
+
+        .product-category {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .product {
+            width: 25%;
+            background: linear-gradient(145deg, #f7fbff, #ffffff);
+            border: 1px solid #d9e6f2;
+            border-radius: 12px;
+            text-align: center;
+            padding: 18px;
+            box-shadow: 0 4px 15px rgba(0, 136, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 25px rgba(0, 136, 255, 0.25);
+        }
+
+        .product img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid #cce0ff;
+        }
+
+        .product p {
+            font-size: 14px;
+            color: #444;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #0078d7;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            color: #333;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #0099ff, #66ccff);
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 14px;
+            margin-top: 80px;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 768px) {
+            .product {
+                width: 100%;
+            }
+
+            .header-content {
+                flex-direction: column;
+            }
+
+            .header-content img {
+                margin-top: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-bg"></div>
+        <h1>鑫達興機械有限公司</h1>
+        <p>客製化自動化設備開發</p>
+    </header>
+    
+
+    <nav>
+        <a href="#about">公司簡介</a>
+        <a href="#products">產品介紹</a>
+        <a href="#contact">聯絡我們</a>
+    </nav>
+
+    <section id="about">
+        <h2>公司簡介</h2>
+        <p>
+            本自動化機械廠初創於1998年，工廠名稱為鑫達興企業社，致力於自動化機械之研發與設計製造。<br>
+            2006年成立「鑫達興機械有限公司」，持續投入自動化工程製作與研發，並以創新與品質為核心理念。<br>
+            公司位於彰化縣埔鹽鄉，專精於設計與製造自動化機械與客製化生產設備，竭誠歡迎各界指教。
+        </p>
+    </section>
+
+    <section id="products">
+        <h2>產品介紹</h2>
+        <div class="product-category">
+            <div class="product">
+                <h3>自動鉚釘組立機</h3>
+                <img src="自動鉚釘組立機.jpg" alt="自動鉚釘組立機圖片">
+                <a href="https://www.youtube.com/watch?v=UalHgEb7vZI" target="_blank">觀看影片</a></p>
+            </div>
+
+            <div class="product">
+                <h3>自動化組裝機</h3>
+                <img src="自動化組裝機.JPG" alt="圖片"> 
+            </div>
+
+            <div class="product">
+                <h3>吊牌組裝機</h3>
+                <img src="吊牌組裝機.png" alt="圖片"> 
+            </div>
+
+            <div class="product">
+                <h3>計程收線綑紮機</h3>
+                <img src="計程收線綑紮機.jpg" alt="圖片"> 
+            </div>
+
+            <div class="product">
+                <h3>簡易型膠帶封口機</h3>
+                <img src="簡易型膠帶封口機.png" alt="圖片"> 
+            </div>
+
+            <div class="product">
+                <h3>L型膠帶封口機</h3>
+                <img src="L型膠帶封口機.png" alt="圖片"> 
+            </div>
+
+            <div class="product">
+                <h3>三面L型膠帶封口機</h3>
+                <img src="三面L型膠帶封口機.png" alt="圖片"> 
+            </div>
+
+            <div class="product">
+                <h3>送料機</h3>
+                <img src="送料機.png" alt="送料機圖片"> 
+            </div>
+
+            <div class="product">
+                <h3>蠟燭芯蕊組裝機</h3>
+                <img src="蠟燭芯蕊組裝機.jpg" alt="圖片"> 
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>聯絡我們</h2>
+        <p>若有任何疑問或需求，請隨時與我們聯絡：</p>
