@@ -2,6 +2,21 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-store">
+    <script>
+      // 阻止右鍵、F12、Ctrl+Shift+I、Ctrl+U
+      document.addEventListener('contextmenu', e => e.preventDefault());
+      document.onkeydown = e => {
+        if (
+          e.key === 'F12' ||
+          (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key)) ||
+          (e.ctrlKey && e.key === 'U')
+        ) {
+          e.preventDefault();
+          alert('此內容受保護，無法查看！');
+        }
+      };
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>鑫達興機械有限公司</title>
     <style>
@@ -18,7 +33,7 @@
         header {
     position: relative;
     color: rgb(0, 0, 0);
-    padding: 50px 0 30px;
+    padding: 40px 0 30px;
     text-align: center;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     overflow: hidden;
@@ -179,8 +194,8 @@ header p {
 <body>
     <header>
         <div class="header-bg"></div>
-        <h1>鑫達興機械有限公司</h1>
-        <p>客製化自動化設備開發</p>
+        <h1 style="font-size: 40px;">鑫達興機械有限公司</h1>
+        <p style="font-size: 20px;">機械　\　自動化機械．設計承製</p>
     </header>
     
 
@@ -205,12 +220,15 @@ header p {
             <div class="product">
                 <h3>自動鉚釘組立機</h3>
                 <img src="自動鉚釘組立機.jpg" alt="自動鉚釘組立機圖片">
-                <a href="https://www.youtube.com/watch?v=UalHgEb7vZI" target="_blank">觀看影片</a></p>
+                <a href="https://www.youtube.com/watch?v=57qD88x8ALg" target="_blank">觀看影片</a></p>
             </div>
 
             <div class="product">
                 <h3>自動化組裝機</h3>
                 <img src="自動化組裝機.JPG" alt="圖片"> 
+                <a href="https://www.youtube.com/watch?v=dpNMt4sEYc8" target="_blank">觀看影片(1)</a><br>
+                <a href="https://www.youtube.com/watch?v=WaZKa91TIVA" target="_blank">觀看影片(2)</a></p>                
+               
             </div>
 
             <div class="product">
@@ -220,22 +238,23 @@ header p {
 
             <div class="product">
                 <h3>計程收線綑紮機</h3>
-                <img src="計程收線綑紮機.jpg" alt="圖片"> 
+                <img src="計程收線綑紮機.jpg" alt="圖片">                 
+                <a href="https://www.youtube.com/watch?v=UalHgEb7vZI" target="_blank">觀看影片</a></p>
             </div>
 
             <div class="product">
                 <h3>簡易型膠帶封口機</h3>
-                <img src="簡易型膠帶封口機.png" alt="圖片"> 
+                <img src="簡易型膠帶封箱機.png" alt="圖片"> 
             </div>
 
             <div class="product">
                 <h3>L型膠帶封口機</h3>
-                <img src="L型膠帶封口機.png" alt="圖片"> 
+                <img src="L型膠帶封箱機.png" alt="圖片"> 
             </div>
 
             <div class="product">
                 <h3>三面L型膠帶封口機</h3>
-                <img src="三面L型膠帶封口機.png" alt="圖片"> 
+                <img src="三面L型膠帶封箱機.png" alt="圖片"> 
             </div>
 
             <div class="product">
@@ -246,11 +265,17 @@ header p {
             <div class="product">
                 <h3>蠟燭芯蕊組裝機</h3>
                 <img src="蠟燭芯蕊組裝機.jpg" alt="圖片"> 
+                <a href="https://www.youtube.com/watch?v=L9wAAHGcvJY" target="_blank">觀看影片(1)</a><br>
+                <a href="https://www.youtube.com/watch?v=uF8oyoR3PTw" target="_blank">觀看影片(2)</a></p>                
             </div>
         </div>
     </section>
 
     <section id="contact">
         <h2>聯絡我們</h2>
-        <p>若有任何疑問或需求，請隨時與我們聯絡：</p>
+        <p>
+            電話：(04)8656033<br>
+            E-mail：sindasing.machine@gmail.com <br>             
+            地址：彰化縣埔鹽鄉西湖村新生路１１５號 <br>         
+           </p>
 
